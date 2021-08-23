@@ -38,5 +38,6 @@ public class menu{
         break;
       }
     }
+    sc.close();
   }
 }
