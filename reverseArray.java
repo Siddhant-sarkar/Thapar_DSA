@@ -5,6 +5,7 @@ public class reverseArray {
     int n= sc.nextInt();
     int[] arr= new int[n];
     for(int i=0;i<n;i++) arr[i]= sc.nextInt();
+    System.out.print("The initial array : ");
     for(int i:arr) System.out.print(i+" ");
     System.out.println();
     for(int i=0;i<n/2;i++){
@@ -12,6 +13,7 @@ public class reverseArray {
      arr[i]=arr[arr.length-1-i];
      arr[arr.length-1-i]=t;
     }
+    System.out.print("The initial array : ");
     for(int val:arr){
       System.out.print(val+" ");
     }

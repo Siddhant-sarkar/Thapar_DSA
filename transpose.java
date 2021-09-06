@@ -17,6 +17,8 @@ public class transpose{
 								{7,8,9}
 							};
 		
+		System.out.println("The Array : ");
+		print(m1);
 		for(int i=0;i<m1.length;i++)	{
 			for(int j=0;j<m1[0].length;j++){
 				if(i<=j){
@@ -26,6 +28,9 @@ public class transpose{
 				}
 			}
 		}
+
+		System.out.println("The Tranposed : ");
+		print()
 		print(m1);
 	}
 }

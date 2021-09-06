@@ -25,6 +25,11 @@ public class matrixMultiplication{
 				for(int k=0;k<m2.length;k++) mlti[i][j]+=m1[i][k]*m2[k][j];
 			}
 		}
+		System.out.println("Matrix 1");
+		print(m1);
+		System.out.println("Matrix 2");
+		print(m2);
+		System.out.println("Matrix Multiplication : ");
 		print(mlti);
 	}
 }

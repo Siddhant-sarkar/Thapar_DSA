@@ -1,3 +1,8 @@
-30 36 42 
-66 81 96 
-102 126 150 
+Welcome to the menue 
+1.Create
+2.Display
+3.Insert
+4.Delete
+5.Search
+6.Exit
+Enter the size of array
