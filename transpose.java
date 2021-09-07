@@ -1,4 +1,3 @@
-import java.util.*;
 public class transpose{
 
 	public static void print(int[][]arr){
