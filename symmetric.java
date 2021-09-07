@@ -3,14 +3,17 @@ public class symmetric {
   public static void main(String[] args) {
    Scanner sc= new Scanner(System.in) ;
    int n=sc.nextInt();
-   Queue<Integer> mq = new LinkedList<>();
-    // There is a method which will use the upper diagonal implementations
-    // here we all we will construct the upperdiagonal matrix 
-    // and for i<=j we will refrence arr[j][i] asat
+   ArrayList<Integer> mq= new ArrayList<>();
    for(int i=0;i<(n*(n+1))/2;i++) mq.add(sc.nextInt());
    for(int i=0;i<n;i++){
      for(int j=0;j<n;j++){
+       if(i<=j){
+        System.out.print((mq.get(i*n-(i*(i+1)/2)+j))+" ");
+        }else{
+        System.out.print((mq.get(j*n-(j*(j+1)/2)+i))+" ");
+       }
      }
+     System.out.println();
    }
    sc.close();
   }
