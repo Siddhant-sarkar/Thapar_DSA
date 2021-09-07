@@ -30,7 +30,6 @@ public class transpose{
 		}
 
 		System.out.println("The Tranposed : ");
-		print()
 		print(m1);
 	}
 }
