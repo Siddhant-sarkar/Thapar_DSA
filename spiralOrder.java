@@ -50,6 +50,7 @@ public class spiralOrder {
         arr[i][j]= sc.nextInt();
       }
     }
+    System.out.println("The new Matrix is equal to ");
     print(printSpiral(4));
     sc.close() ;
   }

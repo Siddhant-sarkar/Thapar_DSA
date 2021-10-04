@@ -28,7 +28,7 @@ public class transpose{
 			}
 		}
 
-		System.out.println("The Tranposed : ");
+		System.out.println("The Transposed : ");
 		print(m1);
 	}
 }
