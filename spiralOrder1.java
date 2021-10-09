@@ -1,4 +1,4 @@
-public class Solution {
+class Solution {
     // DO NOT MODIFY THE ARGUMENTS WITH "final" PREFIX. IT IS READ ONLY
     public int[] spiralOrder(final int[][] A) {
         int rs=0,re=A.length-1; 
