@@ -1,12 +1,2 @@
-*******************
-1. Insert At Head
-2. Insert at tail
-3. Insert at ___
-4. Delete At Tail
-5. Delete At Head
-6. Delete at ___
-7. Search the node
-8. Print the LinkedList
-*******************
-Enter your option: 
-Enter the input value :
+10 10 20 20 20 30 10 40 10 
+The revesed LinkedList is: 10 40 10 30 20 20 20 10 10 

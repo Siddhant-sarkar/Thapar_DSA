@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class MenuList {
+public class reverseLinkedlist {
   public static class Node {
     int data;
     Node next;
@@ -153,76 +153,42 @@ public class MenuList {
         size--;
       }
     }
-    public int search(int data){
+    public void countOccurence(int val){
       if(head==null){
-        System.out.println("The linked List is empty");
-        return -1;
+        System.out.println("Linked list is not initialized");
       }
-      Node temp= head;
-      int t=0;
-      while(temp.next!=null){
-        if(temp.data==data){
-          return t;
-        }
-        t++;
+      int count=0;
+      Node temp=head;
+      while(temp!=null){
+        if(temp.data==val) count++;
         temp=temp.next;
       }
-      return -1;
+      System.out.println("The count of "+val+" : "+count);
     }
-
+    public Node revese(){
+      Node a = null;
+      Node b= head;
+      Node c= head;
+      while(b!=null){
+        c=b.next;
+        b.next=a;
+        a=b;
+        b=c;
+      }
+      head=a;
+      return a;
+    }
   }
-    public static void print(){
-      System.out.println("*******************");
-      System.out.println("1. Insert At Head");
-      System.out.println("2. Insert at tail");
-      System.out.println("3. Insert at ___");
-      System.out.println("4. Delete At Tail");
-      System.out.println("5. Delete At Head");
-      System.out.println("6. Delete at ___");
-      System.out.println("7. Search the node");
-      System.out.println("8. Print the LinkedList");
-      System.out.println("*******************");
-    }
   public static void main(String[] args) throws Exception {
     Scanner sc = new Scanner(System.in);
     LinkedList ll = new LinkedList();
-    int n=0;
-    while(true){
-      print();
-      System.out.println("Enter your option: ");
-      n = sc.nextInt();
-      if(n==1){
-        System.out.println("Enter the input value :");
-        ll.addFirst(sc.nextInt());
-      }else if(n==2){
-        System.out.println("Enter the input value :");
-        ll.addLast(sc.nextInt());
-      }else if(n==3){
-        System.out.println("Enter the position and values");
-        ll.addAt(sc.nextInt(),sc.nextInt());
-      }else if(n==4){
-        System.out.println("Deleting at tail");
-        ll.removeLast();
-      }else if(n==5){
-        System.out.println("Deleting at head ");
-        ll.removeFirst();
-      }else if(n==6){
-        System.out.println("Delete at postion ");
-        ll.removeAt(sc.nextInt());
-      }else if(n==7){
-        System.out.println("Enter the value to be searched");
-        int k=ll.search(sc.nextInt());
-        if(k==-1){
-          System.out.println("The data not found in the linked list");
-        }else{
-          System.out.println("THe data is at "+k);
-        }
-      }else if(n==8){
-        System.out.println("Now displaying the linked List");
-        ll.display();
-      }else{
-        System.out.println("please enter some valid input");
-      }
+    String[] st= (sc.nextLine()).split(" ");
+    for(String p:st){
+      ll.addLast(Integer.parseInt(p));
     }
+    ll.display();
+    ll.revese();
+    System.out.print("The revesed LinkedList is: ");
+    ll.display();
   }
 }
