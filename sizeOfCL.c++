@@ -26,6 +26,7 @@ public:
 			tail->next=n;
 			tail=tail->next;
 		}
+		tail->next=head;
 		size++;
 	}
 	void display(){
@@ -52,5 +53,6 @@ LinkedList init(int n){
 }
 int main(){
 	LinkedList ll = init(10);
+	ll.display();
 	cout<<"The size of linked list is "<<ll.getsize()<<endl;
 }

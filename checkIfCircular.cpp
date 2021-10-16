@@ -41,6 +41,9 @@ public:
 		}
 	}
 	int getsize(){return size;}
+	bool isCircular(){
+		return !(tail.next==NULL);
+	}
 
 };
 LinkedList init(int n){
