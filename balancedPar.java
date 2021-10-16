@@ -4,6 +4,7 @@ public class balancedPar{
 		Scanner sc = new Scanner(System.in);
 		String s  = sc.nextLine();
 		Stack<Character> st = new Stack<>();
+		System.out.println("THe orignal strings is : "+s);
 		for(int i=0;i<s.length();i++){
 			Character c= s.charAt(i);
 			if(c=='[' || c=='{' || c=='('){
